@@ -139,27 +139,35 @@ main.homepage {
         }
 
         img.orange-circle {
-          height: 74px;
           width: auto;
-          top: 419px;
-          left: -20px;
           z-index: 7;
+          height: 74px;
+          top: 85px;
+          left: -4px;
 
 
           @media #{$gt-sm} {
             height: 146px;
+            top: 167px;
+            left: -8px;
           }
 
           @media #{$gt-md} {
             height: 195px;
+            top: 223px;
+            left: -10px;
           }
 
           @media #{$gt-lg} {
             height: 244px;
+            top: 279px;
+            left: -13px;
           }
 
           @media #{$gt-xl} {
             height: 367px;
+            top: 419px;
+            left: -20px;
           }
         }
         // left images end
@@ -422,6 +430,7 @@ main.homepage {
 
     .section-content {
       position: relative;
+      min-height: 200px;
 
       img {
         width: auto;
