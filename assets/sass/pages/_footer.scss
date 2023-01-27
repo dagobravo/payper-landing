@@ -1,0 +1,345 @@
+footer {
+  .mobile-footer-container {
+    display: block;
+
+    @media #{$gt-md} {
+      display: none;
+    }
+
+    .dark-content {
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+
+      @media #{$gt-sm} {
+        padding: 19px;
+      }
+
+      .text1 {
+        font-size: 25px;
+        line-height: 45px;
+        margin-top: 19px;
+
+        @media #{$gt-sm} {
+          font-size: 47px;
+          line-height: 85px;
+          margin-top: 36px;
+        }
+      }
+
+      .text2 {
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 10px;
+
+        @media #{$gt-sm} {
+          font-size: 24px;
+          line-height: 70px;
+          margin-top: 19px;
+        }
+      }
+
+      .input-container {
+        margin-top: 25px;
+
+        @media #{$gt-sm} {
+          margin-top: 47px;
+        }
+
+        .text-input {
+          color: #000;
+          background-color: #fff;
+          text-align: left;
+          border: none;
+
+          border-radius: 3px;
+          font-size: 10px;
+          height: 16px;
+          line-height: 16px;
+          width: 100px;
+
+          @media #{$gt-sm} {
+            border-radius: 5px;
+            font-size: 19px;
+            height: 30px;
+            line-height: 30px;
+            width: 190px;
+          }
+        }
+
+        .submit-button {
+          background-color: #D7FD78;
+          text-align: center;
+          border: none;
+
+          border-radius: 3px;
+          font-size: 9px;
+          font-weight: 400;
+          height: 18px;
+          line-height: 16px;
+          width: 42px;
+
+          @media #{$gt-sm} {
+            border-radius: 5px;
+            font-size: 17px;
+            height: 34px;
+            line-height: 30px;
+            width: 79px;
+          }
+        }
+      }
+
+      .payper-logo {
+        height: auto;
+        width: 50px;
+        margin-top: 50px;
+
+        @media #{$gt-sm} {
+          width: 95px;
+          margin-top: 95px;
+        }
+      }
+
+      .text3 {
+        font-size: 7px;
+        line-height: 9px;
+        margin-top: 3px;
+
+        @media #{$gt-sm} {
+          font-size: 13px;
+          line-height: 17px;
+          margin-top: 5px;
+        }
+      }
+
+      .menu {
+        font-size: 7px;
+        line-height: 15px;
+        margin-top: 8px;
+
+        @media #{$gt-sm} {
+          font-size: 13px;
+          line-height: 28px;
+          margin-top: 15px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+
+        a:visited {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+
+    .colored-content {
+      color: #fff;
+      background-color: #F67622;
+      text-align: center;
+
+      font-size: 4px;
+      line-height: 5pt;
+      padding: 10px;
+
+      @media #{$gt-sm} {
+        font-size: 7px;
+        line-height: 9pt;
+        padding: 19px;
+      }
+    }
+  }
+
+  .desktop-footer-container {
+    @media #{$lt-lg} {
+      display: none;
+    }
+
+    .dark-content {
+      background-color: #000;
+
+      .section-content {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        // default is $gt-md
+        padding: 48px 150px 29px;
+
+        @media #{$xl} {
+          padding: 73px 228px 45px;
+        }
+
+        .col1 {
+          flex: 0 1 45%;
+
+          .col1-logo {
+            img {
+              height: auto;
+              width: 134px;
+
+              @media #{$xl} {
+                width: 204px;
+              }
+            }
+          }
+
+          .col1-text1 {
+            margin-top: 15px;
+
+            @media #{$xl} {
+              margin-top: 24px;
+            }
+          }
+
+          .col1-text1,
+          .col1-text2 {
+            font-size: 16px;
+
+            @media #{$xl} {
+              font-size: 25px;
+            }
+          }
+
+          .col1-text2 {
+            margin-top: 68px;
+
+            @media #{$xl} {
+              margin-top: 104px;
+            }
+          }
+        }
+
+        .col2 {
+          flex: 0 1 25%;
+
+          div {
+            a,
+            a:visited {
+              color: #fff;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            &:nth-child(1) {
+              font-size: 23px;
+              margin-bottom: 15px;
+
+              @media #{$xl} {
+                font-size: 35px;
+                margin-bottom: 24px;
+              }
+            }
+
+            &:not(:first-child) {
+              font-size: 16px;
+              margin-bottom: 13px;
+
+              @media #{$xl} {
+                font-size: 25px;
+                margin-bottom: 20px;
+              }
+            }
+
+            &:last-child {
+              margin-bottom: unset;
+            }
+          }
+        }
+
+        .col3 {
+          flex: 0 1 30%;
+
+          div {
+            &:nth-child(1) {
+              font-size: 23px;
+              margin-bottom: 15px;
+
+              @media #{$xl} {
+                font-size: 35px;
+                margin-bottom: 24px;
+              }
+            }
+
+            &:not(:first-child) {
+              font-size: 16px;
+
+              @media #{$xl} {
+                font-size: 25px;
+              }
+            }
+          }
+
+          .input-container {
+            position: relative;
+            margin-top: 33px;
+            height: 38px;
+
+            @media #{$xl} {
+              margin-top: 50px;
+              height: 58px;
+            }
+
+            .home-input {
+              border: none;
+              height: 38px;
+              width: 314px;
+              border-radius: 7px;
+              padding: 0 2px;
+              font-size: 16px;
+
+              @media #{$xl} {
+                height: 58px;
+                width: 447px;
+                border-radius: 12px;
+                padding: 0 4px;
+                font-size: 25px;
+              }
+            }
+
+            .submit-button {
+              border: none;
+              background-color: #D7FD78;
+              cursor: pointer;
+              position: absolute;
+
+              border-radius: 8px;
+              font-size: 16px;
+              height: 32px;
+              right: 2px;
+              top: 2px;
+              width: 85px;
+
+              @media #{$xl} {
+                border-radius: 12px;
+                font-size: 25px;
+                height: 49px;
+                right: 3px;
+                top: 4px;
+                width: 129px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .colored-content {
+      color: #000;
+      background-color: #F67622;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 13px 0;
+      font-size: 10px;
+
+      @media #{$xl} {
+        padding: 20px 0;
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.normal { font-weight: normal; }
+.bold { font-weight: bold; }
+.colored { color: #F67622; }
+
+body {
+  margin: unset;
+  font-family: 'Roboto', serif;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
