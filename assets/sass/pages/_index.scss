@@ -9,8 +9,25 @@ main.homepage {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-height: 636px;
+        min-height: 129px;
         position: relative;
+
+
+        @media #{$gt-sm} {
+          min-height: 254px;
+        }
+
+        @media #{$gt-md} {
+          min-height: 339px;
+        }
+
+        @media #{$gt-lg} {
+          min-height: 424px;
+        }
+
+        @media #{$gt-xl} {
+          min-height: 636px;
+        }
 
         img:not(.logo) {
           position: absolute;
@@ -20,32 +37,39 @@ main.homepage {
         img.dots-green {
           height: auto;
           z-index: 10;
+          object-fit: cover;
+          top: 0px;
           width: 44px;
+          height: 57px;
           left: 13px;
-          top: -35px;
+          object-position: 0 -35px;
 
           @media #{$gt-sm} {
             width: 87px;
+            height: 114px;
             left: 26px;
-            top: -64px;
+            object-position: 0 -70px;
           }
 
           @media #{$gt-md} {
             width: 116px;
+            height: 152px;
             left: 35px;
-            top: -93px;
+            object-position: 0 -93px;
           }
 
           @media #{$gt-lg} {
             width: 146px;
+            height: 190px;
             left: 44px;
-            top: -116px;
+            object-position: 0 -116px;
           }
 
           @media #{$gt-xl} {
             width: 219px;
+            height: 285px;
             left: 67px;
-            top: -175px;
+            object-position: 0 -175px;
           }
         }
 
@@ -85,20 +109,26 @@ main.homepage {
           width: auto;
           z-index: 8;
           height: 88px;
-          top: 350px;
-          left: -20px;
+          top: 71px;
+          left: -4px;
 
 
           @media #{$gt-sm} {
             height: 174px;
+            top: 140px;
+            left: -8px;
           }
 
           @media #{$gt-md} {
             height: 232px;
+            top: 186px;
+            left: -10px;
           }
 
           @media #{$gt-lg} {
             height: 290px;
+            top: 233px;
+            left: -13px;
           }
 
           @media #{$gt-xl} {
@@ -132,7 +162,6 @@ main.homepage {
             height: 367px;
           }
         }
-
         // left images end
 
         img.logo {
@@ -225,58 +254,163 @@ main.homepage {
 
         // right images
         img.lines-curve-green {
-          width: auto;
           z-index: 10;
-          height: 224px;
           top: 0;
-          right: -250px;
+          right: 0;
+          width: 53px;
+          height: 45px;
+          object-fit: cover;
+          object-position: 0 0;
 
           @media #{$gt-sm} {
-            height: 224px;
-            right: -250px;
+            height: 89px;
+            width: 105px;
+            right: 0;
+            object-fit: cover;
+            object-position: 0 0;
           }
 
           @media #{$gt-md} {
-            height: 224px;
-            right: -250px;
+            width: auto;
+            height: 119px;
+            right: -133px;
           }
 
           @media #{$gt-lg} {
-            height: 224px;
-            right: -250px;
+            width: auto;
+            height: 149px;
+            right: -166px;
           }
 
           @media #{$gt-xl} {
+            width: auto;
             height: 224px;
             right: -250px;
           }
         }
 
         img.papercoin {
-          width: 522px;
-          height: auto;
-          top: 152px;
-          right: -198px;
           z-index: 8;
-          transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+          width: 106px;
+          height: 178px;
+          top: -1px;
+          right: 0px;
+          object-fit: cover;
+          object-position: 0 0;
+
+          @media #{$gt-sm} {
+            width: 180px;
+            top: 17px;
+            right: 0;
+            height: 290px;
+          }
+
+          @media #{$gt-md} {
+            width: 278px;
+            height: auto;
+            top: 81px;
+            right: -105px;
+            object-fit: unset;
+            object-position: unset;
+          }
+
+          @media #{$gt-lg} {
+            width: 348px;
+            height: auto;
+            top: 101px;
+            right: -132px;
+          }
+
+          @media #{$gt-xl} {
+            width: auto;
+            height: 800px;
+            top: 36px;
+            right: -320px;
+          }
         }
 
         img.orange-circle-right {
-          width: 340px;
-          height: auto;
-          right: -30px;
-          top: 243px;
           z-index: 7;
+          width: 89px;
+          height: 89px;
+          top: 45px;
+          right: 0;
+          object-fit: cover;
+          object-position: 0 0;
+
+          @media #{$gt-sm} {
+            width: 150px;
+            top: 104px;
+            right: 0;
+            height: 170px;
+            object-fit: cover;
+            object-position: 0 0;
+          }
+
+          @media #{$gt-md} {
+            width: 181px;
+            height: auto;
+            top: 129px;
+            right: -16px;
+            object-fit: unset;
+            object-position: unset;
+          }
+
+          @media #{$gt-lg} {
+            width: 226px;
+            top: 162px;
+            right: -20px;
+          }
+
+          @media #{$gt-xl} {
+            width: 422px;
+            height: 422px;
+            top: 243px;
+            right: -50px;
+          }
         }
 
         img.cloud-right {
-          height: 311px;
-          width: auto;
-          top: 462px;
-          right: -136px;
           z-index: 9;
-        }
+          width: 128px;
+          height: 63px;
+          top: 110px;
+          right: 0;
+          object-fit: cover;
+          object-position: 0 0;
 
+          @media #{$gt-sm} {
+            width: 252px;
+            height: 124px;
+            top: 195px;
+            right: 0;
+            object-fit: cover;
+            object-position: 0 0;
+          }
+
+          @media #{$gt-md} {
+            width: 166px;
+            height: auto;
+            top: 246px;
+            right: -72px;
+            object-fit: unset;
+            object-position: unset;
+          }
+
+          @media #{$gt-lg} {
+            width: 207px;
+            height: auto;
+            top: 308px;
+            right: -90px;
+          }
+
+          @media #{$gt-xl} {
+            width: 631px;
+            height: auto;
+            top: 532px;
+            right: -80px;
+          }
+        }
         // right images end
       }
     }
