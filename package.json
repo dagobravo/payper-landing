@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "live-server .",
     "node-sass": "node-sass ./assets/sass/main.scss ./assets/css/style.css -w --output-style compressed",
-    "dev:sass": "npm-run-all --parallel node-sass dev"
+    "dev:sass": "npm-run-all --parallel node-sass dev",
+    "surge": "surge --project ./ --domain payper-landing.surge.sh"
   },
   "dependencies": {
     "npm-run-all": "^4.1.5"

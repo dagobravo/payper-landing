@@ -14,8 +14,7 @@ https://xd.adobe.com/view/a6de3f5c-b23b-45d7-9c3c-a535f9db4e7c-f38d/specs/
 
 #### 2. Deploy site on Surge
 
-    $ cd ./index_location_directory
-    $ surge
+    npm run surge
 
 ### Tearing down a project
 

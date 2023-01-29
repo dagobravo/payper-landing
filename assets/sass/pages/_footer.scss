@@ -168,54 +168,84 @@ footer {
         justify-content: space-between;
 
         // default is $gt-md
-        padding: 48px 150px 29px;
+        padding: 48px 150px 50px;
 
         @media #{$xl} {
-          padding: 73px 228px 45px;
+          padding: 73px 228px 50px;
         }
 
         .col1 {
           flex: 0 1 45%;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
 
           .col1-logo {
             img {
               height: auto;
               width: 134px;
 
-              @media #{$xl} {
+              @media #{$gt-sm} {
                 width: 204px;
               }
             }
           }
 
           .col1-text1 {
-            margin-top: 15px;
-
-            @media #{$xl} {
-              margin-top: 24px;
-            }
+            text-align: left;
+            color: #FFFFFF;
+            font-weight: normal;
           }
 
           .col1-text1,
-          .col1-text2 {
+          .col1-text2,
+          .col1-text3,
+          .col1-text4 {
             font-size: 16px;
 
-            @media #{$xl} {
+            @media #{$gt-sm} {
               font-size: 25px;
+              line-height: 29px;
             }
           }
 
           .col1-text2 {
-            margin-top: 68px;
+            a,
+            a:visited {
+              text-decoration: none;
+              color: #fff;
+              cursor: pointer;
+            }
+          }
 
-            @media #{$xl} {
-              margin-top: 104px;
+          .col1-text3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            text-align: left;
+            color: #FFFFFF;
+            font-size: 25px;
+            line-height: 29px;
+
+            div:first-child {
+              margin-right: 20px;
+            }
+
+            img {
+              height: 75px;
+              width: auto;
             }
           }
         }
 
         .col2 {
+          margin-top: 40px;
           flex: 0 1 25%;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
 
           div {
             a,
@@ -226,13 +256,9 @@ footer {
             }
 
             &:nth-child(1) {
-              font-size: 23px;
-              margin-bottom: 15px;
-
-              @media #{$xl} {
-                font-size: 35px;
-                margin-bottom: 24px;
-              }
+              font-size: 35px;
+              line-height: 45px;
+              margin-bottom: 24px;
             }
 
             &:not(:first-child) {
@@ -241,7 +267,7 @@ footer {
 
               @media #{$xl} {
                 font-size: 25px;
-                margin-bottom: 20px;
+                line-height: 45px;
               }
             }
 
@@ -252,42 +278,35 @@ footer {
         }
 
         .col3 {
+          margin-top: 40px;
           flex: 0 1 30%;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
 
-          div {
-            &:nth-child(1) {
-              font-size: 23px;
-              margin-bottom: 15px;
+          .header {
+            font-size: 35px;
+            line-height: 45px;
+            margin-bottom: 24px;
+          }
 
-              @media #{$xl} {
-                font-size: 35px;
-                margin-bottom: 24px;
-              }
-            }
-
-            &:not(:first-child) {
-              font-size: 16px;
-
-              @media #{$xl} {
-                font-size: 25px;
-              }
-            }
+          .content {
+            font-size: 25px;
+            line-height: 29px;
           }
 
           .input-container {
             position: relative;
-            margin-top: 33px;
             height: 38px;
 
             @media #{$xl} {
-              margin-top: 50px;
               height: 58px;
             }
 
             .home-input {
               border: none;
               height: 38px;
-              width: 314px;
+              width: 100%;
               border-radius: 7px;
               padding: 0 2px;
               font-size: 16px;
@@ -310,8 +329,8 @@ footer {
               border-radius: 8px;
               font-size: 16px;
               height: 32px;
-              right: 2px;
-              top: 2px;
+              right: 0;
+              top: 3px;
               width: 85px;
 
               @media #{$xl} {
@@ -323,6 +342,15 @@ footer {
                 width: 129px;
               }
             }
+          }
+
+          .links-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            font-size: 20px !important;
+            line-height: 24px !important;
           }
         }
       }
