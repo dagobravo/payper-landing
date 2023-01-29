@@ -92,7 +92,7 @@ footer {
 
       .payper-logo {
         height: auto;
-        width: 50px;
+        width: 100px;
         margin-top: 50px;
 
         @media #{$gt-sm} {
@@ -104,12 +104,11 @@ footer {
       .text3 {
         font-size: 7px;
         line-height: 9px;
-        margin-top: 3px;
+        margin-top: 10px;
 
         @media #{$gt-sm} {
           font-size: 13px;
           line-height: 17px;
-          margin-top: 5px;
         }
       }
 

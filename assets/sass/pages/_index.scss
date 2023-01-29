@@ -515,21 +515,23 @@ main.homepage {
         text-align: center;
         color: #000000;
         font-weight: bold;
-        font-size: 8px;
-        line-height: 9px;
-        max-width: 55%;
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 95%;
         margin: 50px 0 18px;
 
         @media #{$gt-sm} {
-          font-size: 16px;
-          line-height: 19px;
+          // font-size: 16px;
+          // line-height: 19px;
           margin: 99px 0 36px;
+          // max-width: 95%;
         }
 
         @media #{$gt-md} {
           font-size: 22px;
           line-height: 26px;
           margin: 132px 0 49px;
+          max-width: 55%;
         }
 
         @media #{$gt-lg} {
@@ -555,6 +557,7 @@ main.homepage {
 
         @media #{$lt-xl} {
           flex-wrap: wrap;
+          gap: 30px;
         }
 
         @media #{$gt-sm} {
@@ -588,18 +591,29 @@ main.homepage {
           }
 
           .title {
+            background-color: #000;
             border-radius: 49px;
             width: 359px;
             height: 90px;
-            background-color: #000;
             margin-top: 36px;
             margin-bottom: 33px;
 
             text-align: center;
-            line-height: 90px;
             color: #fff;
-            font-size: 38px;
             font-weight: 900;
+
+            font-size: 38px;
+            line-height: 90px;
+
+            @media #{$lt-md} {
+              width: 239px;
+              height: 60px;
+
+              margin: 24px 0 22px;
+
+              font-size: 25px;
+              line-height: 60px;
+            }
           }
 
           .content {
@@ -610,6 +624,11 @@ main.homepage {
             color: #000000;
             max-width: 384px;
             margin-bottom: 39px;
+
+            @media #{$lt-md} {
+              max-width: 95%;
+              margin-bottom: 26px;
+            }
           }
 
           .footer {
@@ -629,60 +648,65 @@ main.homepage {
             width: 378px;
             height: 360px;
 
+            @media #{$lt-md} {
+              width: 252px;
+              height: 240px;
+            }
+
             // IMAGES >>>
             .circle-orange {
               z-index: 1;
-              width: 268px;
+              width: 71%;
               height: auto;
 
-              bottom: 17px;
-              left: 81px;
+              bottom: 4.7%;
+              left: 21%;
             }
 
             .coffee-woman {
               z-index: 2;
+              width: 58%;
               height: auto;
-              width: 220px;
 
               top: 0px;
-              left: calc(50% - 110px);
+              left: calc(50% - 29%);
             }
 
             .lines-black {
               z-index: 3;
-              width: 132px;
-              height: 55px;
+              width: 35%;
+              height: auto;
 
-              top: 44px;
+              top: 12%;
               left: 0;
             }
 
             .circle-green {
               z-index: 4;
+              width: 36%;
               height: auto;
-              width: 137px;
 
-              right: 32px;
+              right: 8.4%;
               bottom: 0;
             }
 
             .dots {
               z-index: 5;
-              width: 125px;
-              height: 60px;
+              width: 33%;
+              height: auto;
 
               right: 0;
-              bottom: 25px;
+              bottom: 6.9%;
             }
 
             .cloud {
               z-index: 6;
-              width: 198px;
-              height: 91px;
-              top: 192px;
-              left: -12px;
-            }
+              width: 52%;
+              height: auto;
 
+              top: 50.7%;
+              left: -3.3%;
+            }
             // IMAGES >>>
           }
         }
@@ -690,31 +714,35 @@ main.homepage {
         .column:nth-child(2) {
           .images {
             width: 354px;
-            // height: 345px;
             height: 360px;
+
+            @media #{$lt-md} {
+              width: 236px;
+              height: 240px;
+            }
 
             // IMAGES >>>
             .circle-orange {
               z-index: 1;
-              width: 298px;
               height: auto;
+              width: 84%;
 
-              left: calc(50% - 149px);
-              bottom: 10px;
+              left: calc(50% - 42%);
+              bottom: 3%;
             }
 
             .lines-curve-green {
               z-index: 2;
-              width: 336px;
-              height: 151px;
+              width: 95%;
+              height: auto;
 
-              top: 20px;
-              left: calc(50% - 168px);
+              top: 6%;
+              left: calc(50% - 47%);
             }
 
             .conversation {
               z-index: 3;
-              width: 354px;
+              width: 100%;
               height: auto;
 
               bottom: 0;
@@ -723,13 +751,12 @@ main.homepage {
 
             .cloud {
               z-index: 4;
-              width: 360px;
+              width: 102%;
               height: auto;
 
               top: 0;
-              left: calc(50% - 204px);
+              left: calc(50% - 58%);
             }
-
             // IMAGES >>>
           }
         }
@@ -739,28 +766,33 @@ main.homepage {
             width: 443px;
             height: 360px;
 
+            @media #{$lt-md} {
+              width: 295px;
+              height: 240px;
+            }
+
             // IMAGES >>>
             .circle-orange {
               z-index: 1;
-              width: 274px;
+              width: 62%;
               height: auto;
 
-              top: 76px;
-              left: 43px;
+              top: 21%;
+              left: 10%;
             }
 
             .circle-green {
               z-index: 2;
-              width: 238px;
+              width: 54%;
               height: auto;
 
               top: 0;
-              right: 25px;
+              right: 6%;
             }
 
             .ice-cream-truck {
               z-index: 3;
-              width: 319px;
+              width: 72%;
               height: auto;
 
               bottom: 0;
@@ -769,22 +801,21 @@ main.homepage {
 
             .lines-curve-black {
               z-index: 4;
-              width: 132px;
-              height: 59px;
+              width: 30%;
+              height: auto;
 
-              right: 12px;
-              bottom: 50px;
+              right: 3%;
+              bottom: 14%;
             }
 
             .cloud {
               z-index: 5;
-              width: 472px;
-              height: 211px;
+              width: 107%;
+              height: auto;
 
               top: 0;
               right: 0;
             }
-
             // IMAGES >>>
           }
         }
@@ -1237,14 +1268,9 @@ main.homepage {
             color: #000000;
             margin-top: 13px;
 
-            // font-size: 7px;
-            // line-height: 8px;
-            // max-width: 199px;
-
             @media #{$gt-sm} {
               font-size: 14px;
               line-height: 16px;
-              // max-width: 392px;
             }
 
             @media #{$gt-md} {
