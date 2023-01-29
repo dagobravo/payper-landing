@@ -1170,13 +1170,13 @@ main.homepage {
 
     .section-content {
       position: relative;
-      padding: 10px 23px 39px;
+      padding: 20px 23px 39px;
 
       overflow-x: clip;
       overflow-clip-margin: 0px;
 
       @media #{$gt-sm} {
-        padding: 36px 0 35px;
+        padding: 36px 20 35px;
       }
 
       @media #{$gt-md} {
@@ -1194,16 +1194,40 @@ main.homepage {
         align-items: flex-start;
         flex-wrap: wrap;
 
+        @media #{$lt-lg} {
+          flex-direction: column;
+        }
+
         .column {
           position: relative;
 
           .text1 {
             text-align: left;
             font-weight: 900;
-            font-size: 74px;
-            font-weight: 87px;
             letter-spacing: 0.74px;
             color: #000000;
+            font-size: 15px;
+            font-weight: 17px;
+
+            @media #{$gt-sm} {
+              font-size: 29px;
+              font-weight: 34px;
+            }
+
+            @media #{$gt-md} {
+              font-size: 39px;
+              font-weight: 46px;
+            }
+
+            @media #{$gt-lg} {
+              font-size: 49px;
+              font-weight: 58px;
+            }
+
+            @media #{$gt-xl} {
+              font-size: 74px;
+              font-weight: 87px;
+            }
 
             .green-background {
               background-color: #D7FD78;
@@ -1213,10 +1237,37 @@ main.homepage {
           .text2 {
             text-align: left;
             font-weight: bold;
-            font-size: 36px;
-            line-height: 42px;
             color: #000000;
-            max-width: 980px;
+            margin-top: 13px;
+
+            // font-size: 7px;
+            // line-height: 8px;
+            // max-width: 199px;
+
+            @media #{$gt-sm} {
+              font-size: 14px;
+              line-height: 16px;
+              // max-width: 392px;
+            }
+
+            @media #{$gt-md} {
+              font-size: 19px;
+              line-height: 22px;
+              max-width: 523px;
+              margin-top: unset;
+            }
+
+            @media #{$gt-lg} {
+              font-size: 24px;
+              line-height: 28px;
+              max-width: 653px;
+            }
+
+            @media #{$gt-xl} {
+              font-size: 36px;
+              line-height: 42px;
+              max-width: 980px;
+            }
           }
 
           .inner-section-columns {
@@ -1224,34 +1275,94 @@ main.homepage {
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
-            margin-top: 98px;
+            margin-top: 19px;
+
+            @media #{$gt-sm} {
+              margin-top: 39px;
+            }
+
+            @media #{$gt-md} {
+              margin-top: 52px;
+            }
+
+            @media #{$gt-lg} {
+              margin-top: 65px;
+            }
+
+            @media #{$gt-xl} {
+              margin-top: 98px;
+            }
+
+            @media #{$lt-md} {
+              flex-direction: column;
+              gap: 20px;
+            }
 
             .column {
               text-align: left;
               color: #000000;
-              font-size: 25px;
-              line-height: 29px;
-
               display: flex;
               flex-direction: column;
-              gap: 25px;
+
+              font-size: 13px;
+              line-height: 15px;
+              gap: 13px;
+
+              @media #{$gt-lg} {
+                font-size: 16px;
+                line-height: 19px;
+                gap: 16px;
+              }
+
+              @media #{$gt-xl} {
+                font-size: 25px;
+                line-height: 29px;
+                gap: 25px;
+              }
             }
           }
         }
 
         >.column:nth-child(1) {
           flex: 1 1 65%;
+
+          @media #{$lt-lg} {
+            flex: 1 1 100%;
+          }
         }
 
         >.column:nth-child(2) {
           flex: 1 1 35%;
 
+          @media #{$lt-lg} {
+            text-align: center;
+            flex: 1 1 100%;
+          }
+
           img {
             position: absolute;
-            width: 764px;
-            height: 442px;
+            width: 100%;
+            height: auto;
             top: 0;
             right: 41px;
+
+            @media #{$lt-lg} {
+              position: relative;
+              width: 50%;
+              height: auto;
+              top: unset;
+              right: unset;
+              margin-top: 20px;
+            }
+
+            @media #{$lt-md} {
+              position: relative;
+              width: 100%;
+              height: auto;
+              top: unset;
+              right: unset;
+              margin-top: 20px;
+            }
           }
         }
       }
